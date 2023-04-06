@@ -1,0 +1,129 @@
+@media only screen and (max-width: 768px) {
+  /* =========================Mobile Hamburger Menu============================= */
+  .navbar {
+    padding: 0 30px;
+  }
+  .hamburgerMenu {
+    display: block;
+  }
+
+  .hamburgerMenu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburgerMenu.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .hamburgerMenu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 90px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    color: black;
+    width: 85%;
+    height: 70%;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 100px 0px 100px 100px hsl(233, 26%, 24%);
+    margin-right: 30px;
+  }
+  /* ======================================================================== */
+
+  .btn {
+    display: none;
+  }
+  a {
+    margin: 4px 0;
+    color: white;
+  }
+  .nav-menu.active {
+    right: 0;
+  }
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .image {
+    background-image: url(../images/image-mockups.png),
+      url(../images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top -150px center, top -140px left -30px;
+    background-size: 390px, 550px;
+    height: 380px;
+  }
+  .next-generation {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .next-generation p {
+    font-size: 1rem;
+    width: 350px;
+  }
+  .choose {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .choose h2 {
+    text-align: center;
+    width: 200px;
+  }
+  .choose p {
+    text-align: center;
+    width: 300px;
+    font-size: 1rem;
+    padding: 20px 0;
+  }
+  .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+  }
+  h4 {
+    text-align: center;
+  }
+  .latest-articles {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    text-align: center;
+  }
+  .logo-section-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .request {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+  }
+  .request button {
+    margin-left: 0;
+  }
+  .request p {
+    width: 200px;
+  }
+}
